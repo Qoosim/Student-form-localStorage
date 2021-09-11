@@ -7,10 +7,31 @@
  <link rel="stylesheet" href="styles.css">
   <title>Usage of localStorage</title>
 </head>
-<body>
-  <form >
-    <button class="btn btn-success">Send</button>
-  </form>
+<body class="bg-info">
+  <div class="container w-50">
+    <form class="row g-3">
+      <h2 class="text-center">Student Details</h2>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Your email here" required>
+      </div>
+      <div class="col-md-6">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password here" required>
+      </div>
+      <div class="col-12">
+        <label for="inputAddress">Address:</label>
+        <input type="text" id="inputAddress" class="form-control" placeholder="Flat 001, Sunshine...">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
   
   <script src="app.js" defer></script>
 </body>
